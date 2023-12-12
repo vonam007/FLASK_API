@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <input type="file" id="image-input" accept="image/*">
+    <img id="input-img" style="display: none;" alt="Input Image">
+    <canvas id="output-canvas" width="800" height="600"></canvas>
+    <script type="module">
+        import { handleImageUpload } from './js/uploadImage.js';
+        $("#image-input").change(function () {
+            handleImageUpload();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+# Ignore compiled files
+*.class
+*.o
+*.pyc
+
+# Ignore dependencies
+/node_modules
+/bower_components
+
+# Ignore environment-specific files
+/.env
+/.env.*
+venv/
+env/
+
+# Ignore log files
+/log/*.log
+
+# Ignore IDE and editor files
+/.idea
+/.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore python file
+__pycache__/
+
