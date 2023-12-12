@@ -30,13 +30,13 @@ export async function drawBoxesOnImage(fileJson) {
         ctx.rect(box[0], box[1], box[2] - box[0], box[3] - box[1]);
         ctx.lineWidth = 2;
         ctx.strokeStyle = 'red';
-        ctx.fillStyle = 'rgba(255, 0, 0, 0.2)';
+        ctx.fillStyle = 'rgba(255, 0, 0, 0.1)';
         ctx.stroke();
         ctx.fill();
 
         // Hiển thị thông tin nhãn và điểm số
         ctx.font = '14px Arial';
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = 'blue';
         ctx.fillText(label + " " + score.toFixed(2), box[0], box[1] - 5);
       });
     //};
