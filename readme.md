@@ -9,4 +9,5 @@
 
 ## Flow work:
 User -> Client -> Server -> Client -> User
+
 User input an image -> Client send image to Server -> Server process image -> Server send result to Client -> Client show result to User
